@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/19d9091ea0.js" crossorigin="anonymous"></script>
+
+    <title>Zara India</title>
+    <style>
+        #regpage{
+            margin-top: 50px;
+            margin-left: 13%;
+        }
+        #main{
+            margin-left: -10px;
+            width: 300px;
+        }
+        /* nav{
+            position: relative;
+            align-items: center;
+        } */
+      #hamburger{
+          background-color: white;
+      }
+
+
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.formgroup {
+  margin-top: 1em;
+  transition: all 0.3s;
+  /* border:1px solid red; */
+}
+.form-label {
+  display: block;
+  transform: translateY(-1.8em);
+  transform-origin: 0 0;
+  transition: all 0.3s;
+  font-size: 10px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form-input {
+  width: 90%;
+  border-style: none none solid none;
+  border-bottom: 1px solid;
+  outline: none;
+}
+.form-input::placeholder {
+  color: transparent;
+}
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-3em);
+  transition: all 0.3s;
+}
+
+span {
+  text-decoration: underline;
+}
+
+#wholeform {
+  /* border:1px solid rgb(0, 23, 128); */
+  width: 860px;
+  margin-left: 18%;
+}
+#sub1 {
+  /* border:1px solid green; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+#sub2 {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap: 0%;
+}
+#sub2 .prefix {
+  width: 65%;
+  padding-right: 3%;
+  /* border:1px solid red; */
+}
+#sub2 .postfix {
+  width: 100%;
+  padding-left: 1%;
+}
+/* #sub3{
+        border:1px solid red;
+        
+    } */
+#sub3 > div {
+  padding: 1% 0% 1% 0%;
+}
+#createaccount {
+  width: 400px;
+  height: 35px;
+  border: 0px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 4%;
+}
+label {
+  color: grey;
+  font-family: inherit;
+  font-size: 10px;
+}
+.black {
+  color: black;
+  font-weight: normal;
+  font-size: 13px;
+}
+select {
+  border-style: none none solid none;
+  width: 90%;
+}
+#footer {
+  /* border:1px solid rgb(0, 23, 128); */
+
+  margin-left: 13.5%;
+}
+#state{
+    margin-bottom: 20px;
+
+}
+
+    </style>
+
+</head>
+<body>
+
+    <!-----------------------Navbar Starts------------------------->
+
+    <nav>
+        
+        
+
+
+
+        <div id="maindiv">
+            <div class="leftdiv">
+                <div class="ham">
+                    <!-- <input type="checkbox" name="toggle-nav"> -->
+                    <label for="toggle-nav">
+                        <span class="menu-icon"></span>
+                    </label>
+                    <section class="side-nav-panel">
+                    </section>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+
+                        <img class="logomain" src="C:\Users\Sufiyan\Desktop\ZaraPro\img\ZaraLogo.png" alt="ZaraLogo">
+                    </a>
+                </div>
+            </div>
+            <div class="rightdiv">
+                <div class="searchdiv">
+                    <div>
+                        <p><b> <a href="">SEARCH</a></b> </p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="navitems">
+
+                    <div id="loginId"></div>
+                    <div> <a href="help.html">HELP</a> </div>
+                    <div><a href="./cart.html"><i class="fas fa-suitcase-rolling"></i></a></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-----------------------Navbar Ends------------------------->
+
+
+    <!-----------------------Hamburger Menu Starts------------------------->
+    <div class="hamburger" id="style-9">
+        <div class="divflexdiv">
+            <ul>
+                <li><a  href="women.html"><b>WOMAN</b></a></li>&nbsp;&nbsp;&nbsp;
+                <li><a  href="mans.html"><b>MAN</b></a></li>&nbsp;&nbsp;&nbsp;
+                <li><a  href=""><b>KIDS</b></a></li>&nbsp;&nbsp;&nbsp;
+                <li><a  href=""><b>BEAUTY</b></a></li>&nbsp;&nbsp;&nbsp;
+            </ul>
+        </div>
+        <div class="divhamitems">
+          <ul>
+
+
+            <li><a href="mans.html"> NEW </a></li>
+            <li><a href="mans.html">BEST SELLERS</a></li>
+            <li><a href="mans.html">LINEN</a></li>
+            <li><a href="women.html">DRESSES | JUMPSUITS</a></li>
+            <li><a href="women.html"> TOPS | BODYSUITS </a></li>
+            <li><a href="mans.html"> TROUSERS</a></li>
+            <li><a href="mans.html">SHIRTS </a></li>
+            <li><a href="mans.html">TSHIRTS | SWEATSHIRTS</a></li>
+            <li><a href="mans.html"> JEANS </a></li>
+            <li><a href="mans.html"> SHORTS | SKORTS </a></li>
+            <li><a href="women.html">  SKIRTS</a></li>
+            <li><a href="mans.html"> BASICS</a></li>
+            <li><a href="women.html"> CO-ORD SETS</a></li>
+            <li><a href="mans.html"> KNITWEAR </a></li>
+            <li><a href="mans.html"> SUITS </a></li>
+            <li><a href="mans.html">BLAZERS </a></li>
+            <li><a href="mans.html"> WAISTCOATS | GILETS</a></li>
+            <li><a href="mans.html"> JACKETS | TRENCH COATS </a></li>
+            <li><a href="women.html"> BAGS </a></li>
+            <li><a href="women.html"> SWIMSUITS </a></li>
+            <li><a href="women.html"> ACCESSORIES </a></li>
+            <li><a href="mans.html"> PERFUMES</a></li>
+            <li><a href="women.html"> BEAUTY </a></li>
+            <li><a href="mans.html" style="color: red;"> SPECIAL PRICES </a></li>&nbsp;&nbsp;
+
+            <li><a href="women.html"> DRESS TIME </a></li>
+            <li><a href="women.html">SPRING BREAK</a></li>
+            <li><a href="mans.html"> HOLIDAY EDIT</a></li>
+            <li><a href="mans.html"> GIFT CARD </a></li>
+<li><a href="mans.html"> JOIN LIFE</a></li>
+
+        </ul>
+
+        </div>
+
+      
+
+
+        <div class="info">
+            <a href="help.html">+&nbsp;INFO </a>
+        </div>
+      
+    </div>
+</nav>
+<!-----------------------Hamburger Menu Ends------------------------->
+
+
+    <!------------------Registration Form Starts---------------------->
+  
+    <div id="regpage">
+        <form id="main">
+            <div id="wholeform">
+                <div>
+                    <h4>PERSONAL DETAILS</h4>
+                </div>
+                <div>
+                    <form>
+       
+                    </form>
+                </div>
+                <div id="sub1">
+                    <div class="formgroup">
+                        <input required  class="form-input" type="email" id="eemail" value="" placeholder=" ">
+                        <label class="form-label" for="eemail">E-MAIL</label>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="formgroup">
+                        <input required class="form-input" type="password" id="Password" placeholder=" ">
+                        <label class="form-label" for="Password">PASSWORD</label>    
+                    </div>
+ <div class="formgroup">
+                        <input required class="form-input" type="password" id="RPassword" placeholder=" ">
+                        <label class="form-label" for="RPassword">REPEAT PASSWORD</label>    
+                    </div>
+ <div class="formgroup">
+                        <input required class="form-input" type="text" id="user_name" placeholder=" ">
+                        <label class="form-label" for="user_name">NAME</label>    
+                    </div>
+                  
+                </div>
+                <div id="sub2">                    
+                  
+                                       
+                </div>
+                <div id="sub3">
+                    <div style="font-size: 10px; font-family: Arial, Helvetica, sans-serif;">
+                        <input required class="" type="checkbox" id="promoemail" placeholder=" " value="rendered-Checked" required/>                                                
+                        I Wish to receive Zara News on my Email 
+                    </div>
+                    <div style="font-size: 10px; font-family: Arial, Helvetica, sans-serif;">
+                        <input required class="" type="checkbox" id="tc" placeholder=" " required>
+                        I accept the <span> Privacy Statement</span>   
+                    </div>
+                    <div>
+                        <input id="createaccount" required type="submit" value="CREATE ACCOUNT">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!------------------Registration Form Ends---------------------->
+
+
+
+<!------------------Footer Starts-------------------------->
+
+<div id="commonfooter">
+   
+  
+    
+    <div id="commonfooterlists">
+       <table id="table" >
+           <thead>
+               <div >
+
+                   <tr>
+                       <th>help</th>
+                       <th>follow us</th>
+                       <th>company</th>
+                       <th>policies</th>
+                    </tr>
+                </div>
+                </thead>
+           <tbody>
+<div>
+               <tr>
+                   <td>My Zara Account</td>
+                   <td>newsletter</td>
+                   <td>about us</td>
+                   <td>privacy policy</td>
+               </tr>
+               <tr>
+                   <td>Items and Sizes</td>
+                   <td>instagram</td>
+                   <td>join life</td>
+                   <td>purchase conditions</td>
+               </tr>
+               <tr>
+                   <td>Gift Options</td>
+                   <td>facebook</td>
+                   <td>offices</td>
+                   <td>Gift Card Conditions</td>
+               </tr>
+               <tr>
+                   <td>shipping</td>
+                   <td>twitter</td>
+                   <td>stores</td>
+                   <td></td>
+               </tr>
+               <tr>
+                   <td>Payment and Invoices</td>
+                   <td>pinterest</td>
+                   <td>work with us</td>
+                   <td></td>
+               </tr>
+               <tr>
+                   <td>My Purchases</td>
+                   <td>youtube</td>
+                   <td></td>
+                   <td></td>
+               </tr>
+               <tr>
+                   <td>Exchanges,Returns and Refunds</td>
+                   <td></td>
+                   <td></td>
+               </tr>
+               <tr>
+                   <td>Zara Experiences</td>
+               </tr>
+</div>
+           </tbody>
+       </table>
+    </div>
+   
+    <div id="commonfootercountry">
+        <div>INDIA</div>
+        <div id="commonfooterrights">
+            <div>Zara Global Co.</div>
+            <div><i class="fa-solid fa-copyright"></i><span>ALL RIGHTS RESERVED</span></div>
+        </div>
+    </div>
+    <div id="commonfooteraddress">
+        <p>name and address of the manufacturer:
+            <br>industria de diseno textil, s.a. (inditex, s.a.)
+            <br>avenida de la diputacion, edificio inditex, 15143, arteixo(a coruna), spain.
+        </p>
+    </div>
+</div>
+
+
+<!----------------------Footer Ends-------------------------->
+
+
+ 
+</body>
+</html>
+
+<script>
+
+var userdata=JSON.parse(localStorage.getItem("USERSDATA"))||[];
+
+
+var loginAnchar=document.createElement("a")
+loginAnchar.setAttribute("id","userId")
+if(userdata.length>0){
+loginAnchar.innerText=userdata[userdata.length-1]["username"]
+}else{
+    loginAnchar.innerText="LOG IN"
+}
+if(loginAnchar.innerText=="LOG IN"){
+  loginAnchar.href="loginPage.html"
+}else{
+  loginAnchar.href="signout.html"
+}
+
+document.querySelector("#loginId").append(loginAnchar)
+
+
+
+
+
+var ham=document.querySelector(".hamburger");
+     var hamcross=document.querySelector("i");
+
+     ham.style.display="none";
+    var  count=0
+    function myFunction() {
+       count++
+       if(count%2==1){
+        ham.style.display="block";
+        hamcross.setAttribute("class","fas fa-times fa-2x")
+
+       }else{
+        ham.style.display="none";
+        hamcross.setAttribute("class","fa fa-bars fa-2x")
+       }
+       
+        
+           
+
+
+         
+     
+   
+
+
+
+       
+    }
+
+
+    document.querySelector("form").addEventListener("submit",createaccount);
+    var userdata=JSON.parse(localStorage.getItem("USERSDATA"))||[];
+    function createaccount()
+    {
+        event.preventDefault();
+        
+        var email=document.querySelector("#eemail").value;
+        var pw=document.querySelector("#Password").value;
+        var rpw=document.querySelector("#RPassword").value;
+        if(pw!=rpw&pw!="")
+        {
+            alert("password match error");
+            return;
+        }
+        var name=document.querySelector("#user_name").value;
+      
+        var pincode=document.querySelector("#pincode").value;
+        var address=document.querySelector("#address").value;
+        var addadress=document.querySelector("#add_address").value;
+        var locality=document.querySelector("#locality").value;
+        var city=document.querySelector("#city").value;
+        var state=document.querySelector("select").value;
+        var prefix=document.querySelector("#prefix").value;
+        var mobile=document.querySelector("#mobile").value;
+        var promoemail=document.querySelector("#promoemail").value;
+        var tcbox=document.querySelector("#tc").value;
+        var obj={"Email":email,"Password":pw,"username":name,"Pincode":pincode,"Address":address,"Addaddress":addadress,"Locality":locality,"State":state, "Prefix":prefix, "Mobile":mobile, "Promoemail":promoemail, "tcbox":tcbox}
+        console.log(obj)
+        userdata.push(obj);
+        localStorage.setItem("USERSDATA",JSON.stringify(userdata))
+        
+        
+        alert("SIGNUP SUCCESS");
+        window.location.href = "loginPage.html";
+    }
+
+
+</script>
+
